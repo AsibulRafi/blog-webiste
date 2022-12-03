@@ -1,0 +1,36 @@
+.create {
+  &__wrapper {
+    padding: 5rem 15rem;
+    @media screen and (max-width: 1600px) {
+      padding: 5rem 4rem;
+    }
+    @include breakpoint-down(tab) {
+      padding: 5rem 2rem;
+    }
+    @include breakpoint-down(mobile) {
+      padding: 5rem 1rem;
+    }
+  }
+  &__heading {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #d33d29;
+    margin-bottom: 5rem;
+    @include breakpoint-down(tab) {
+      font-size: 36px;
+    }
+    @include breakpoint-down(mobile) {
+      font-size: 32px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 28px;
+    }
+  }
+  &__form {
+    &-img {
+      background-color: #d33d29;
+    }
+  }
+}
